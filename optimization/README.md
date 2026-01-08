@@ -7,6 +7,8 @@ This directory focuses on the [fourth lecture](https://www.youtube.com/watch?v=q
 - Simulated Annealing
 - Linear Programming
 - Constraint Satisfaction
+- Node Consistency
+- Arc Consistency
 - Backtracking Search
 
 It contains one project:
