@@ -1,13 +1,13 @@
 # Optimization
 
-This directory focuses on the fourth lecture of the class about optimization, covering the following subjects:
+This directory focuses on the [fourth lecture](https://www.youtube.com/watch?v=qK46ET1xk2A) of the class about **Optimization**, covering the following subjects:
 
 - Local Search
 - Hill Climbing
 - Simulated Annealing
 - Linear Programming
 - Constraint Satisfaction
-- Backtracking Search.
+- Backtracking Search
 
 It contains one project:
 

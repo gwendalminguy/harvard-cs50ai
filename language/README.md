@@ -1,6 +1,6 @@
 # Language
 
-This directory focuses on the seventh lecture of the class about language, covering the following subjects:
+This directory focuses on the [seventh lecture](https://www.youtube.com/watch?v=QAZc9xsQNjQ&t=3574s) of the class about **Language**, covering the following subjects:
 
 - Syntax
 - Semantics

@@ -1,6 +1,6 @@
 # Neural Networks
 
-This directory focuses on the sixth lecture of the class about neural networks, covering the following subjects:
+This directory focuses on the [sixth lecture](https://www.youtube.com/watch?v=J1QD9hLDEDY) of the class about **Neural Networks**, covering the following subjects:
 
 - Artificial Neural Networks
 - Activation Functions

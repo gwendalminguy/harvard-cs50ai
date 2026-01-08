@@ -1,6 +1,6 @@
 # Search
 
-This directory focuses on the first lecture of the class about search, covering the following subjects:
+This directory focuses on the [first lecture](https://www.youtube.com/watch?v=WbzNRTTrX0g&t=1s) of the class about **Search**, covering the following subjects:
 
 - Search Problems
 - Depth-First Search

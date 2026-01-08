@@ -1,13 +1,13 @@
 # Knowledge 
 
-This directory focuses on the second lecture of the class about knowledge, covering the following subjects:
+This directory focuses on the [second lecture](https://www.youtube.com/watch?v=HWQLez87vqM) of the class about **Knowledge**, covering the following subjects:
 
 - Propositional Logic
 - Entailment
 - Inference
 - Model Checking
 - Resolution
-- First Order Logic.
+- First Order Logic
 
 It contains two projects:
 

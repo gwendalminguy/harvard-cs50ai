@@ -1,6 +1,6 @@
 # Uncertainty
 
-This directory focuses on the third lecture of the class about uncertainty, covering the following subjects:
+This directory focuses on the [third lecture](https://www.youtube.com/watch?v=D8RRq3TbtHU) of the class about **Uncertainty**, covering the following subjects:
 
 - Probability
 - Conditional Probability

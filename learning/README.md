@@ -1,6 +1,6 @@
 # Learning
 
-This directory focuses on the fifth lecture of the class about learning, covering the following subjects:
+This directory focuses on the [fifth lecture](https://www.youtube.com/watch?v=-g0iJjnO2_w&t=977s) of the class about **Learning**, covering the following subjects:
 
 - Supervised Learning
 - Nearest-Neighbor Classification
