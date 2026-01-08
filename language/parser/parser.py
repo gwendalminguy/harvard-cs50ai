@@ -4,20 +4,44 @@ import sys
 TERMINALS = """
 Adj -> "country" | "dreadful" | "enigmatical" | "little" | "moist" | "red"
 Adv -> "down" | "here" | "never"
-Conj -> "and" | "until"
-Det -> "a" | "an" | "his" | "my" | "the"
+P -> "at" | "before" | "after" | "in" | "of"
+P -> "with" | "by" | "from" | "about" | "on" | "to"
+
+Coo -> "for" | "and" | "nor" | "but" | "or" | "yet" | "so"
+Sub -> "when" | "while" | "before" | "after" | "since" | "until" | "whenever"
+Sub -> "that" | "if" | "whether" | "because" | "as" | "unless"
+Sub -> "although" | "though" | "whereas"
+
+Det -> "a" | "an" | "his" | "my" | "the" | "their" | "our" | "some"
 N -> "armchair" | "companion" | "day" | "door" | "hand" | "he" | "himself"
 N -> "holmes" | "home" | "i" | "mess" | "paint" | "palm" | "pipe" | "she"
-N -> "smile" | "thursday" | "walk" | "we" | "word"
-P -> "at" | "before" | "in" | "of" | "on" | "to"
+N -> "smile" | "thursday" | "walk" | "we" | "word" | "wallet"
 V -> "arrived" | "came" | "chuckled" | "had" | "lit" | "said" | "sat"
-V -> "smiled" | "tell" | "were"
+V -> "smiled" | "tell" | "were" | "left" | "did" | "went" | "worked"
 """
 
 NONTERMINALS = """
-S -> NP VP | NP VP NP VP | NP VP Conj VP | NP VP NP Conj NP VP NP | NP VP NP | NP VP Conj VP NP | NP VP NP Conj VP NP
-VP -> V | Adv V | V Adv | V P
-NP -> N | Det N | Det Adj N | Det Adj Adj N | Det Adj Adj Adj N | P Det Adj N | Det N P N | Det N Adv | NP Conj NP | P N | NP P NP
+S -> NP VP
+S -> S Coo S
+S -> NP VP Sub S
+
+VP -> V
+VP -> Adv VP
+VP -> VP Adv
+VP -> VP NP
+VP -> VP PP
+VP -> VP Coo VP
+
+NP -> N
+NP -> Det N
+NP -> Det AdjP N
+NP -> NP PP
+NP -> NP Coo NP
+
+AdjP -> Adj
+AdjP -> Adj AdjP
+
+PP -> P NP
 """
 
 grammar = nltk.CFG.fromstring(NONTERMINALS + TERMINALS)
