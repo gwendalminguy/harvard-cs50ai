@@ -129,21 +129,14 @@ def minimax(board):
     # Returning best move according to player
     if current == "X":
         best = max([element["value"] for element in elements])
-        # Checking first for a winning move
-        for element in elements:
-            if element["value"] == best and terminal(result(board, element["action"])):
-                return element["action"]
-        # Finding best move otherwise
-        for element in elements:
-            if element["value"] == best:
-                return element["action"]
     else:
         best = min([element["value"] for element in elements])
-        # Checking first for a winning move
-        for element in elements:
-            if element["value"] == best and terminal(result(board, element["action"])):
-                return element["action"]
-        # Finding best move otherwise
-        for element in elements:
-            if element["value"] == best:
-                return element["action"]
+
+    # Checking first for a winning move
+    for element in elements:
+        if element["value"] == best and terminal(result(board, element["action"])):
+            return element["action"]
+    # Finding best move otherwise
+    for element in elements:
+        if element["value"] == best:
+            return element["action"]
