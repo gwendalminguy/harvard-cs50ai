@@ -1,6 +1,6 @@
 # CS50 - Artificial Intelligence
 
-This repository focuses on completing the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. It contains seven directories, each dedicated to a lecture of the class and its associated projects to complete:
+This repository focuses on completing the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. It contains seven directories, each dedicated to a lecture of the class and its associated completed projects:
 
 * [Search](https://github.com/gwendalminguy/harvard-cs50ai/tree/main/search/)
 * [Knowledge](https://github.com/gwendalminguy/harvard-cs50ai/tree/main/knowledge/)
