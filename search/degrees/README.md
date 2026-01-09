@@ -4,7 +4,7 @@ This program determines how many "degrees of separation" apart two actors are, b
 
 ## Understanding
 
-This program works as solving a search problem, where the **initial state** is the first actor, and the **goal state** is the second actor. The program finds the shortest path connecting the two actors using an implementation of **breadth-first search**, by building and maintaining a **queue frontier** of state nodes (which are actors), and exploring neighbor actors first.
+This program works as solving a search problem, where the **initial state** is the first actor, and the **goal state** is the second actor. The program finds the shortest path connecting the two actors using an implementation of **breadth-first search**, by building and maintaining a **queue** of nodes (whose states are actors), and exploring neighbor actors first.
 
 ## Usage
 
