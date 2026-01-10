@@ -91,49 +91,51 @@ def shortest_path(source, target):
 
     If no possible path, returns None.
     """
-
-    initial_states = {(movie_id, source) for movie_id in people[source]["movies"]}
-
     # Checking if source and target are different
     if source == target:
         return []
 
     frontier = QueueFrontier()
 
-    for state in initial_states:
-        node = Node(state, None, neighbors_for_person(state[1]))
-        frontier.add(node)
+    explored = set()
+    relations = dict()
 
+    explored.add(source)
+    frontier.add(source)
+
+    # Exploring the frontier
     while not frontier.empty():
-        node = frontier.remove()
-        frontier.add_explored(node)
+        current = frontier.remove()
 
-        # Adding path when target found
-        if node.state[1] == target:
-            return get_path(node)
+        # Returning path when target found
+        if current == target:
+            return get_path(source, target, relations)
 
-        # Adding nodes to explore
-        child_states = node.action
-        for state in child_states:
-            children = neighbors_for_person(state[1])
-            if children and not frontier.contains_state(state) and not frontier.is_explored(state):
-                child = Node(state, node, children)
-                frontier.add(child)
+        for movie in people[current]["movies"]:
+            for actor in movies[movie]["stars"]:
+                if actor not in explored:
+                    explored.add(actor)
+                    relations[actor] = (movie, current)
+                    frontier.add(actor)
 
     return None
 
 
-def get_path(node):
+def get_path(source, target, relations):
     """
     Returns the path from the root to a node.
     """
-    path = [(node.state)]
+    path = []
+    current = target
 
-    while node.parent is not None:
-        node = node.parent
-        path.append(node.state)
+    while current != source:
+        movie, parent = relations[current]
+        path.append((movie, current))
+        current = parent
 
-    return list(reversed(path[:-1]))
+    path.reverse()
+
+    return path
 
 
 def person_id_for_name(name):
