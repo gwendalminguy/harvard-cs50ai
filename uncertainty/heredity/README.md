@@ -24,3 +24,7 @@ $ python3 heredity.py <data_file>
 ```
 
 Once the program launched, it will compute for each person in the family the probability that it has 0, 1 or 2 copies of the gene, and the probability that it has the trait or not. The results will then be printed to the terminal. The `data_file` argument must be the name of a `CSV` file in the `data/` directory. It can be one of the provided files (`family0.csv`, `family1.csv` or `family2.csv`), or any other one, as long as it is structured the same way.
+
+## See More
+
+This project is part of the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. More information about this specific project can be found [here](https://cs50.harvard.edu/ai/projects/2/heredity/).

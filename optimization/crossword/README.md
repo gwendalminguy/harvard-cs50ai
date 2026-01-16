@@ -37,3 +37,7 @@ $ python3 generate.py <structure_file.txt> <words_file.txt> [<output_name.png>]
 ```
 
 Once the program launched, it will find a solution, if one exists, to fill the given crossword puzzle structure with a matching combination of words from the given list. The `structure_file.txt` argument must be a text file representing a crossword puzzle structure, by containing solid blocks, represented with the `#` character, and empty blocks, represented with the `_` character. The `words_file.txt` argument must be a text file containing a list of words, one per line, that can be used to solve the puzzle. The solution will be printed to the terminal, and saved to an image file if the `output_name.png` argument is specified.
+
+## See More
+
+This project is part of the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. More information about this specific project can be found [here](https://cs50.harvard.edu/ai/projects/3/crossword/).

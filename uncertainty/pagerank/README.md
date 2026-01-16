@@ -34,3 +34,7 @@ $ python3 pagerank.py <corpus_directory>
 ```
 
 Once the program launched, it will compute a score for each web page and rank them by importance. It will do so twice, the first time by **sampling**, and the second time by **iterating**, and print both results to the terminal. The `corpus_directory` argument must be the name of a directory containing web pages. It can be one of the provided directories (`corpus0`, `corpus1` or `corpus2`), or any other directory, as long as it contains `HTML` web pages, and that each link to another web page found in a file that relates to a page of the corpus has the same name as the matching file.
+
+## See More
+
+This project is part of the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. More information about this specific project can be found [here](https://cs50.harvard.edu/ai/projects/2/pagerank/).

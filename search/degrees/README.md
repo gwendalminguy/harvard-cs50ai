@@ -26,3 +26,7 @@ $ python3 degrees.py [<data_directory>]
 ```
 
 Once the data is loaded, the program will prompt the user for an actor's name, then for another. If both actors are connected somehow, it will print thier degree of separation, and the details of the shortest path connecting them. The `data_directory` is an optional argument, which can be either `small` (reduced dataset to test the program) or `large` (much more complete but slower). If not given, the `large` dataset will be used by default.
+
+## See More
+
+This project is part of the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. More information about this specific project can be found [here](https://cs50.harvard.edu/ai/projects/0/degrees/).

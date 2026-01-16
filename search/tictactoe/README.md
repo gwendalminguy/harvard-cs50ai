@@ -40,3 +40,7 @@ Once launched, the player will be asked to choose between playing as `X` or as `
 ```
 $ deactivate
 ```
+
+## See More
+
+This project is part of the [CS50 - Artificial Intelligence](https://harvardonline.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) class by Harvard. More information about this specific project can be found [here](https://cs50.harvard.edu/ai/projects/0/tictactoe/).
