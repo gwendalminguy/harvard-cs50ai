@@ -6,6 +6,17 @@ This program determines how many "degrees of separation" apart two actors are, b
 
 This program works as solving a search problem, where the **initial state** is the first actor, and the **goal state** is the second actor. The program finds the shortest path connecting the two actors using an implementation of **breadth-first search**, by building and maintaining a **queue** of nodes (whose states are actors), and exploring neighbor actors first.
 
+## Files
+
+This project contains the following files and directories:
+
+| Element | Description |
+| :---- | :---------- |
+| `large/` | The directory containing a large CSV dataset. |
+| `small/` | The directory containing a small CSV dataset. |
+| `degrees.py` | The python script to find degrees of separation. |
+| `util.py` | The python file containing useful class implementations. |
+
 ## Usage
 
 The program can be launched as follows:
