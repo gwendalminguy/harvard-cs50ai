@@ -6,6 +6,15 @@ This program assesses the likelihood that a person will have a particular geneti
 
 This program computes, for each person in a family, the **probability distribution** over having 0, 1, or 2 copies of a specific gene, as well as the probability of exhibiting the associated trait. Using unconditional gene probabilities, inheritance rules from parents (including mutation), and known evidence about whether individuals do or do not show the trait, the program enumerates all possible genetic configurations. For each configuration, it calculates a **joint probability**, accumulates these probabilities for each person, and finally **normalizes** the results so that all probability distributions sum to 1.
 
+## Files
+
+This project contains the following files and directories:
+
+| Element | Description |
+| :---- | :---------- |
+| `data/` | The directory containing a CSV dataset. |
+| `heredity.py` | The python script to compute probabilities. |
+
 ## Usage
 
 The program can be launched as follows:
