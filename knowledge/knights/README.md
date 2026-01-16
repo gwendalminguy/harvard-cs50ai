@@ -6,6 +6,15 @@ This program solves [Knights and Knaves](https://en.wikipedia.org/wiki/Knights_a
 
 This program solves four of these puzzles, described in `puzzle.py`, by representing them using **propositional logic**. Each puzzle's knowledge is built using **logical connectives**, which is then used by the program to draw conclusions about the identity of each character.
 
+## Files
+
+This project contains the following files:
+
+| Element | Description |
+| :---- | :---------- |
+| `logic.py` | The python file containing useful class implementations. |
+| `puzzle.py` | The python script to define and solve puzzles. |
+
 ## Usage
 
 The program can be launched as follows:
