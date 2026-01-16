@@ -10,9 +10,20 @@ The first method proceeds by **sampling**, and simulates a user clicking on a li
 
 The second method proceeds by **iterating**, and starts by giving each page the same score, then iteratively adjust the score of each page by computing a new one (based on aplying a formula to the previous score), until all the scores are stable. The formula used to compute a a new score for a given page is the following:
 
-$$PR(p) = \frac{1 - d}{N} + d\sum_{i}\frac{PR(i)}{NumLinks(i)}$$
+$$
+PR(p) = \frac{1 - d}{N} + d\sum_{i}\frac{PR(i)}{NumLinks(i)}
+$$
 
 In this formula, `d` is the damping factor, `N` is the total number of pages in the corpus, `i` ranges over all pages that link to page `p`, and `NumLinks(i)` is the number of links present on page `i`.
+
+## Files
+
+This project contains the following files and directories:
+
+| Element | Description |
+| :---- | :---------- |
+| `corpus#/` | The directory containing a corpus of web pages. |
+| `pagerank.py` | The python script to rank web pages. |
 
 ## Usage
 
