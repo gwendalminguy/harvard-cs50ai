@@ -6,6 +6,17 @@ This program implements a small AI able to play the [Minesweeper](https://en.wik
 
 The program works by accumulating knowledge about the board of the game at each move, and drawing new knowledge by **inference** when it can, based on the information given by the number found when making a move (which represents the number of neighboring cells that are mine cells). This knowledge is then used to categorize, among the remaining cells, which are safe cells and which are mine cells. Since there can sometimes be no safe cell known, the AI can still lose the game by making a random move on a mine cell.
 
+## Files
+
+This project contains the following files and directories:
+
+| Element | Description |
+| :---- | :---------- |
+| `assets/` | The directory containing a font file and images. |
+| `minesweeper.py` | The python file containing the function implementations for the AI. |
+| `requirements.txt` | The text file listing requirements for installation. |
+| `runner.py` | The python script to run the game. |
+
 ## Installation
 
 In order to play the game, a small installation needs to be made, by creating a virtual environment, activating it and installing the requirements. This can be achieved using the following commands:
